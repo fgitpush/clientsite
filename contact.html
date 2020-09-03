@@ -159,6 +159,90 @@
 
   </main><!-- End #main -->
 
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+
+          <div class="row mb-5 align-items-end">
+            <div class="col-md-12" data-aos="fade-up">
+              <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut
+                officiis explicabo inventore.
+              </p>
+            </div>
+  
+          </div>
+  
+          <div class="row">
+            <div class="col-md-12 mb-5 mb-md-0" data-aos="fade-up">
+  
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+  
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label for="name">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="col-md-12 form-group">
+                    <label for="name">Subject</label>
+                    <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="col-md-12 form-group">
+                    <label for="name">Message</label>
+                    <textarea class="form-control" name="message" cols="30" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                    <div class="validate"></div>
+                  </div>
+  
+                  <div class="col-md-12 mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+  
+                  <div class="col-md-6 form-group">
+                    <input type="submit" class="readmore d-block w-100" value="Send Message">
+                  </div>
+                </div>
+  
+              </form>
+  
+            </div>
+  
+
+  
+          </div>
+  
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- ======= Footer ======= -->
   <footer class="footer" role="contentinfo">
     <div class="container">
