@@ -44,7 +44,7 @@
       <div class="">
         <div class="">
         <div class="  row mb-5 align-items-center  flex-row flex-nowrap">
-          <div class="col-12 col-sm-12 " style="margin-left:50px;">
+          <div class="col-11 col-sm-12 " style="margin-left:50px;">
             <h2>Hey, I'm Johan Stanworth</h2>
             <p class="mb-0">Freelance Creative &amp; Professional Graphics Designer</p>
           </div>
@@ -321,12 +321,14 @@
   <script src="assets/js/main.js"></script>
 <style>
 body{
-  width: 96vw;
+;
+ 
 }
 
 @media only screen and (min-width: 600px)  {
 body{
   width:300%;
+  
 }
 
 .item {
@@ -336,6 +338,16 @@ body{
 .item .item-wrap {
     display: inline-block;
 }
+}
+
+@media only screen and (max-width: 600px)  {
+  body{
+    width: 96vw;
+    overflow-x: hidden; /* Hide scrollbars */
+  }
+  .item{
+    margin-left: 20px;
+  }
 }
 
   </style>
